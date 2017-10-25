@@ -14,3 +14,14 @@ function produceTipCalculator(percent) {
         return total * percent;
     }
 }
+
+function createDriver() {
+    let driverId = 0;
+
+    return class Driver {
+        constructor(name) {
+            this.id = ++ driverId;
+            this.name = name;
+        }
+    }
+}
